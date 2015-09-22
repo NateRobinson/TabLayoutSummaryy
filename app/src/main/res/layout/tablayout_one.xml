@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.gu.tablayoutsummaryy.view.SyncHorizontalScrollView
+            android:id="@+id/mHsv"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:fadingEdge="none"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/rl_nav"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@color/white">
+
+                <RadioGroup
+                    android:id="@+id/rg_nav_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="38dip"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:orientation="horizontal"></RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/iv_nav_indicator"
+                    android:layout_width="1dip"
+                    android:layout_height="2dip"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_indicator_line"
+                        android:layout_width="1dip"
+                        android:layout_height="2dip"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/circle_line"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="matrix" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.gu.tablayoutsummaryy.view.SyncHorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/iv_nav_left"
+            android:layout_width="9dip"
+            android:layout_height="15dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:contentDescription="@string/app_name"
+            android:paddingBottom="1dip"
+            android:src="@mipmap/icon_left"
+            android:visibility="gone"></ImageView>
+
+        <ImageView
+            android:id="@+id/iv_nav_right"
+            android:layout_width="9dip"
+            android:layout_height="15dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:contentDescription="@string/app_name"
+            android:paddingBottom="1dip"
+            android:src="@mipmap/icon_right"
+            android:visibility="visible"></ImageView>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

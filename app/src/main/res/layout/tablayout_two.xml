@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--PagerSlidingTabStrip相关配置属性-->
+    <!--pstsIndicatorColor： Color of the sliding indicator-->
+    <!--pstsUnderlineColor： Color of the full-width line on the bottom of the view-->
+    <!--pstsDividerColor ：Color of the dividers between tabs-->
+    <!--pstsIndicatorHeightHeight： of the sliding indicator-->
+    <!--pstsUnderlineHeight： Height of the full-width line on the bottom of the view-->
+    <!--pstsDividerPadding：Top and bottom padding of the dividers-->
+    <!--pstsTabPaddingLeftRight： Left and right padding of each tab-->
+    <!--pstsScrollOffset ：Scroll offset of the selected tab-->
+    <!--pstsTabBackground ：Background drawable of each tab, should be a StateListDrawable-->
+    <!--pstsShouldExpand ：If set to true, each tab is given the same weight, default false-->
+    <!--pstsTextAllCaps ：If true, all tab titles will be upper case, default true-->
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/circle_line"
+        app:pstsIndicatorColor="@color/white"
+        app:pstsShouldExpand="true"
+        app:pstsTabTextColor="@color/white" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

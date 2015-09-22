@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="circle_line">#0994f0</color>
+    <color name="fragment_a_bg">#e61e10</color>
+    <color name="fragment_b_bg">#e2a007</color>
+    <color name="fragment_c_bg">#52f009</color>
+    <color name="fragment_d_bg">#09f0af</color>
+    <color name="fragment_e_bg">#093ff0</color>
+    <color name="fragment_f_bg">#e809f0</color>
+</resources>
