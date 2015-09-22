@@ -64,6 +64,8 @@ public class TabLayoutTwo extends AppCompatActivity {
         //如果setShouldExpand设置为true，那么每一个tab会一样的宽，以均分屏幕宽度
         //这个在这边设置没有效果，貌似必须在xml文件中进行配置：app:pstsShouldExpand="true"
         //tabs.setShouldExpand(true);
+        tabs.setTextColorResource(R.color.white);
+        tabs.setTextSize((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 18, getResources().getDisplayMetrics()));
         adapter = new MyPagerAdapter(getSupportFragmentManager());
         pager.setAdapter(adapter);
         tabs.setViewPager(pager);

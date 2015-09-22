@@ -9,7 +9,7 @@
     <!--pstsIndicatorColor： Color of the sliding indicator-->
     <!--pstsUnderlineColor： Color of the full-width line on the bottom of the view-->
     <!--pstsDividerColor ：Color of the dividers between tabs-->
-    <!--pstsIndicatorHeightHeight： of the sliding indicator-->
+    <!--pstsIndicatorHeight:Height of the sliding indicator-->
     <!--pstsUnderlineHeight： Height of the full-width line on the bottom of the view-->
     <!--pstsDividerPadding：Top and bottom padding of the dividers-->
     <!--pstsTabPaddingLeftRight： Left and right padding of each tab-->
@@ -22,9 +22,11 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:background="@color/circle_line"
+        app:pstsDividerColor="@android:color/transparent"
         app:pstsIndicatorColor="@color/white"
+        app:pstsIndicatorHeight="2dp"
         app:pstsShouldExpand="true"
-        app:pstsTabTextColor="@color/white" />
+        app:pstsUnderlineColor="@android:color/transparent" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
